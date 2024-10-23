@@ -1,7 +1,7 @@
-text = input("Введите строку: ")
+s = input("Введите строку: ")
 
-new_text = text.replace("а", "")
-deleted_count = len(text) - len(new_text)
+s1 = s.replace("а", "")
+count = len(s) - len(s1)
 
-print("Новая строка:", new_text)
-print("Количество удаленных символов:", deleted_count)
+print("Новая строка:", s1)
+print("Количество удаленных символов:", count)

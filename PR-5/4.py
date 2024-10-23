@@ -1,8 +1,10 @@
-text = input("Введите строку: ")
+s = input("Введите строку: ")
+count = 0
 
-new_text = text.replace("а", "о")
-count_replacements = len(text) - len(new_text)
+while 'а' in s:
+    s = s.replace("а", "о", 1)
+    count += 1
 
-print("Новая строка:", new_text)
-print("Количество замен:", count_replacements)
-print("Количество символов:", len(text))
+print("Новая строка:", s)
+print("Количество замен:", count)
+print("Количество символов:", len(s))
